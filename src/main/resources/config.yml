@@ -3,7 +3,7 @@
 # - + - - - - - - - - + -
 
 # PrefixValue
-Prefix: '&8[&cServer&8]'
+PrefixValue: '&8[&cServer&8]'
 
 # Commands that will be blocked by the plugin.
 BlockedCommands:
