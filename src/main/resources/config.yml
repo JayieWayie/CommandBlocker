@@ -1,0 +1,27 @@
+# - + - - - - - - - - + -
+#     CommandBlocker
+# - + - - - - - - - - + -
+
+# PrefixValue
+Prefix: '&8[&cServer&8]'
+
+# Commands that will be blocked by the plugin.
+BlockedCommands:
+  - 'pl'
+  - 'bukkit:pl'
+  - 'bukkit:about'
+  - 'about'
+  - 'ver'
+  - 'version'
+  - 'bukkit:plugin'
+
+# Words that will be blocked by the plugin.
+BlockedPhrases:
+  - ''
+
+
+# Messages
+
+CommandNotAllowed: '&4Error404: &cCommand is invalid.'
+BlockedPhrasesMessage: '&4Error404: &cYou said a bad word.'
+BypassedBlocker: '&cYou have bypassed a command that was disabled.'
