@@ -16,10 +16,12 @@ public final class CommandBlocker extends JavaPlugin {
 
     public void listeners(){
         getServer().getPluginManager().registerEvents(new commandblocker(this), this);
+        getCommand("cmdblocker").setExecutor(new reloadcommand(this));
     }
 
     public void files(){
-
+        getConfig().options().copyDefaults();
+        saveDefaultConfig();
     }
 
     public void startupmessage(){

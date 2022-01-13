@@ -6,16 +6,21 @@
 PrefixValue: '&8[&cServer&8]'
 
 # Commands that will be blocked by the plugin.
+# Only ops can bypass.
 BlockedCommands:
-  - 'pl'
-  - 'bukkit:pl'
-  - 'bukkit:about'
-  - 'about'
-  - 'ver'
-  - 'version'
-  - 'bukkit:plugin'
+  - '/pl'
+  - '/plugins'
+  - '/bukkit:pl'
+  - '/bukkit:about'
+  - '/about'
+  - '/ver'
+  - '/version'
+  - '/bukkit:plugin'
+
+
 
 # Words that will be blocked by the plugin.
+# No one can bypass.
 BlockedPhrases:
   - ''
 

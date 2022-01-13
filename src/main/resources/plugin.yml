@@ -4,3 +4,7 @@ main: me.jayie.commandblocker.CommandBlocker
 api-version: 1.18
 authors: [ Jayiewayie ]
 description: Block commands and words
+commands:
+  cmdblocker:
+    description: The base command for the plugin.
+    aliases: [cmdb]

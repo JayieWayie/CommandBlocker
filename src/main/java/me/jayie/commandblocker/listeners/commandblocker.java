@@ -26,12 +26,15 @@ public class commandblocker implements Listener {
         String bypass = plugin.getConfig().getString("BypassedBlocker");
         Player player = e.getPlayer();
         String blockedcommandssplitcompare = "";
+        boolean check = false;
         for(String blockedcommandssplit : blockedcommands){
             blockedcommandssplitcompare = blockedcommandssplit;
-            break;
+            if (e.getMessage().equalsIgnoreCase(blockedcommandssplitcompare)){
+                check = true;
+            }
         }
 
-        if (e.getMessage().equalsIgnoreCase(blockedcommandssplitcompare)){
+        if (check){
             if (!player.isOp()) {
                 e.setCancelled(true);
                 player.sendMessage(Color(prefix + " " + error));

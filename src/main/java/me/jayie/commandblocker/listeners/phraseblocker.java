@@ -24,11 +24,15 @@ public class phraseblocker implements Listener {
         String prefix = plugin.getConfig().getString("PrefixValue");
         Player player = e.getPlayer();
         String phrasessplitcompare = "";
+        boolean check = false;
         for (String phrasessplit : phrases){
             phrasessplitcompare = phrasessplit;
+            if (e.getMessage().equalsIgnoreCase(phrasessplitcompare)){
+                check = true;
+            }
         }
 
-        if (e.getMessage().equalsIgnoreCase(phrasessplitcompare)){
+        if (check){
             e.setCancelled(true);
             player.sendMessage(prefix + " " + blockedphrasesmsg);
         }
